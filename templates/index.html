@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App by Maacah</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>📝 My Notes</h1>
+    <p class="subtitle">A cloud-powered notes app</p>
+  </header>
+
+  <main>
+    <section class="note-form">
+      <input type="text" id="title" placeholder="Note title..." maxlength="100">
+      <textarea id="content" placeholder="Write your note here..." rows="4"></textarea>
+      <button id="save-btn">
+        <span class="btn-text">Save Note</span>
+      </button>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="notes-section">
+      <h2>Your Notes <span id="count" class="count">0</span></h2>
+      <div id="notes-list" class="notes-grid">
+        <p class="empty">No notes yet. Add one above! ☝️</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
